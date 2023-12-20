@@ -78,3 +78,45 @@ int main() {
 
     return 0;
 }
+
+
+
+MACROIN.TXT
+-----------
+M1 MACRO **
+** LDA N1
+** ADD N2
+** STA N3
+** MEND **
+M2 MACRO **
+** LDA N1
+** SUB N2
+** STA N4
+** MEND **
+M3 MACRO **
+** LDA N1
+** MUL N1
+** STA N3
+** MEND **
+** START 1000
+** M3 **
+** M2 **
+** M1 **
+** END **
+
+
+OUTPUT
+-------
+MACROOUT.TXT
+-------------
+** START 1000
+** LDA N1
+** MUL N1
+** STA N3
+** LDA N1
+** SUB N2
+** STA N4
+** LDA N1
+** ADD N2
+** STA N3
+** END **
