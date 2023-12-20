@@ -8,7 +8,7 @@ int main()
     scanf("%d",&nr);
     printf("Enter the intial head position : ");
     scanf("%d",&initial);
-    printf("Enter the track requests : ");
+    printf("Enter the track requests :\n ");
     for(i=0;i<nr;i++){
         scanf("%d",&tr[i]);
     }
@@ -24,3 +24,21 @@ int main()
     printf("\n average seek time : %f\n",avg);
     return 0;
 }
+
+
+OUTPUT
+--------
+Enter the number of track requests: 8
+Enter the intial head position : 50
+Enter the track requests : 
+176
+79
+34
+60
+92
+2
+11
+114
+50----->176----->79----->34----->60----->92----->2----->11----->114
+ Total seek time : 528
+ average seek time : 66.000000
