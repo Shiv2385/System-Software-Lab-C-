@@ -66,3 +66,34 @@ void main(){
     sorta(n);
     display(n);
 }
+
+
+OUTPUT
+-------
+Enter the number of Processes : 5
+
+ Process No : 1
+ Arrival time: 4
+ Execution time : 3
+
+ Process No : 2
+ Arrival time: 5
+ Execution time : 9
+
+ Process No : 3
+ Arrival time: 1
+ Execution time : 6
+
+ Process No : 4
+ Arrival time: 2
+ Execution time : 8
+
+ Process No : 5
+ Arrival time: 3
+ Execution time : 2
+Process no      Arrival Time    Execution Time  Waiting Time    Finish Time     Turn Around Time
+3               1               6               0               7               6
+5               3               2               4               9               6
+1               4               3               5               12              8
+4               2               8               10              20              18
+2               5               9               15              29              24
