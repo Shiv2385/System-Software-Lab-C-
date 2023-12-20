@@ -10,7 +10,7 @@ void main()
 		scanf("%s",name);
         fp=fopen("objectcode.txt","r");
         fscanf(fp,"%s",line);
-        for(i=2,j=0;i<8,j<6;i++,j++)
+        for(i=2,j=0;line[i]!='^';i++,j++)
         name1[j]=line[i];
         name1[j]='\0';
         printf("name from obj. %s\n",name1);
@@ -37,3 +37,46 @@ void main()
 	}while(!feof(fp));
 		fclose(fp);
 }
+
+
+
+
+
+objectcode.txt
+----------------
+H^SAMPLE^001000^0035
+T^001000^0C^001003^071009$
+T^002000^03^111111$
+E^001000
+
+
+OUTPUT
+--------
+enter program name:SAMPLE
+name from obj. SAMPLE
+001000   00
+001001   10
+001002   03
+001003   07
+001004   10
+001005   09
+002000   11
+002001   11
+002002   11
+jump to execution address:001000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
